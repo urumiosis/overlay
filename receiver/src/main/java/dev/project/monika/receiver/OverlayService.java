@@ -113,6 +113,8 @@ public final class OverlayService extends Service {
         ImageView image = new ImageView(this);
         image.setImageResource(R.drawable.monika);
         image.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        image.setScaleX(2.0f);
+        image.setScaleY(2.0f);
         image.setContentDescription("Monika character visual prop");
         root.addView(image, new FrameLayout.LayoutParams(-1, -1, Gravity.CENTER));
         WindowManager.LayoutParams layout = new WindowManager.LayoutParams(
